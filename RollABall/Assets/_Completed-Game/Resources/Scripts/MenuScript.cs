@@ -9,8 +9,8 @@ public class MenuScript : MonoBehaviour {
     {
         if (GameData._instance)
         {
-            GameData._instance.pausePopUp.transform.Find("Continue").GetComponent<Button>().onClick.AddListener(ContinueGame);
-            GameData._instance.pausePopUp.transform.Find("Levels Page").GetComponent<Button>().onClick.AddListener(NextButtonClickEvent);
+            GameData._instance.pausePopUp.transform.GetChild(1).Find("Continue").GetComponent<Button>().onClick.AddListener(ContinueGame);
+            GameData._instance.pausePopUp.transform.GetChild(1).Find("Levels Page").GetComponent<Button>().onClick.AddListener(NextButtonClickEvent);
             GameData._instance.gameWinPopUP.transform.Find("Next").GetComponent<Button>().onClick.AddListener(NextButtonClickEvent);
             GameObject gameOverPopUp = GameData._instance.gameOverPopUp;
             if (gameOverPopUp)

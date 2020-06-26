@@ -24,10 +24,10 @@ public class GameData : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Transform parent = GameObject.Find("Canvas").transform;
-        gameOverPopUp = Instantiate(Resources.Load("Prefabs/GameOverPopUp"), parent)  as GameObject;
-        gameWinPopUP = Instantiate(Resources.Load("Prefabs/GameWinPopUP"), parent) as GameObject;
-        pausePopUp = Instantiate(Resources.Load("Prefabs/PausePopUP"), parent) as GameObject;
+        //Transform parent = GameObject.Find("Canvas").transform;
+        //gameOverPopUp = Instantiate(Resources.Load("Prefabs/GameOverPopUp"), parent)  as GameObject;
+        //gameWinPopUP = Instantiate(Resources.Load("Prefabs/GameWinPopUP"), parent) as GameObject;
+        //pausePopUp = Instantiate(Resources.Load("Prefabs/PausePopUP"), parent) as GameObject;
         gameOverPopUp.SetActive(false);
         gameWinPopUP.SetActive(false);
         pausePopUp.SetActive(false);
