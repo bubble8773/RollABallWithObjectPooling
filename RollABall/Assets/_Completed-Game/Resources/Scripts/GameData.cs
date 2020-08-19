@@ -60,7 +60,7 @@ public class GameData : MonoBehaviour {
         
 
         //levelcomplete condition
-        if (coins == 10)
+        if (coins == 2)
         {
             PlayerPrefs.SetInt("LevelComplete", 1);
             // unlock the next level
@@ -70,7 +70,8 @@ public class GameData : MonoBehaviour {
                 PlayerPrefs.SetInt("UnlockedLevel", unlockedLevelIndex);
                 Debug.Log(PlayerPrefs.GetInt("UnlockedLevel"));
             }
-           
+
+            PlayerPrefs.SetInt("Totalcoins",PlayerPrefs.GetInt("Totalcoins") +coins);
             gameWinPopUP.SetActive(true);
            
         }
