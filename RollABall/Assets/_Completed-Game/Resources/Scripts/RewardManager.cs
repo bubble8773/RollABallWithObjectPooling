@@ -41,6 +41,7 @@ public class RewardManager : MonoBehaviour
        totalcoins  += PlayerPrefs.GetInt("Totalcoins") +amount;
         PlayerPrefs.SetInt("Totalcoins", totalcoins);
         timerObj.timeText.gameObject.SetActive(true);
+        timerObj.waitingTime = 10;
         timerObj.timerIsRunning = true;
     }
     

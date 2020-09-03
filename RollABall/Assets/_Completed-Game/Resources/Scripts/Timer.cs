@@ -51,6 +51,7 @@ public class Timer : MonoBehaviour
     }
 
     void DisplayTime(float timeToDisplay) {
+        timeText.gameObject.SetActive(true);
         System.TimeSpan t = System.TimeSpan.FromSeconds(timeToDisplay);
         timerFormatted = string.Format("{0:D2}h:{1:D2}m:{2:D2}s:{3:D3}ms", 
             t.Hours, t.Minutes, t.Seconds, t.Milliseconds);
